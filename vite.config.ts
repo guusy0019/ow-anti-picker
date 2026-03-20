@@ -58,5 +58,10 @@ export default defineConfig(({ mode }) => {
     resolve: {
       tsconfigPaths: true,
     },
+    optimizeDeps: {
+      // @tanstack/devtools が solid-js を参照するが、solid-js 1.9.7 に setStyleProperty が無く
+      // Vite 8 の rolldown 事前バンドルで失敗するため除外する
+      exclude: ['@tanstack/devtools', 'solid-js', 'solid-js/web'],
+    },
   };
 });

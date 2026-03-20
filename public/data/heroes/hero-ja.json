@@ -1,0 +1,160 @@
+{
+  "bastion": {
+    "name": "バスティオン",
+    "role": "ダメージ",
+    "subrole": "スペシャリスト"
+  },
+  "emre": { "name": "エムレ", "role": "ダメージ", "subrole": "スペシャリスト" },
+  "junkrat": {
+    "name": "ジャンクラット",
+    "role": "ダメージ",
+    "subrole": "スペシャリスト"
+  },
+  "mei": { "name": "メイ", "role": "ダメージ", "subrole": "スペシャリスト" },
+  "soldier_76": {
+    "name": "ソルジャー76",
+    "role": "ダメージ",
+    "subrole": "スペシャリスト"
+  },
+  "symmetra": {
+    "name": "シンメトラ",
+    "role": "ダメージ",
+    "subrole": "スペシャリスト"
+  },
+  "torbjorn": {
+    "name": "トールビョーン",
+    "role": "ダメージ",
+    "subrole": "スペシャリスト"
+  },
+  "anran": { "name": "アンラン", "role": "ダメージ", "subrole": "フランカー" },
+  "genji": { "name": "ゲンジ", "role": "ダメージ", "subrole": "フランカー" },
+  "reaper": { "name": "リーパー", "role": "ダメージ", "subrole": "フランカー" },
+  "tracer": {
+    "name": "トレーサー",
+    "role": "ダメージ",
+    "subrole": "フランカー"
+  },
+  "vantage": {
+    "name": "ヴェンデッタ",
+    "role": "ダメージ",
+    "subrole": "フランカー"
+  },
+  "venture": {
+    "name": "ベンチャー",
+    "role": "ダメージ",
+    "subrole": "フランカー"
+  },
+  "echo": { "name": "エコー", "role": "ダメージ", "subrole": "リコン" },
+  "freija": { "name": "フレイヤ", "role": "ダメージ", "subrole": "リコン" },
+  "pharah": { "name": "ファラ", "role": "ダメージ", "subrole": "リコン" },
+  "sombra": { "name": "ソンブラ", "role": "ダメージ", "subrole": "リコン" },
+  "ashe": {
+    "name": "アッシュ",
+    "role": "ダメージ",
+    "subrole": "シャープシューター"
+  },
+  "cassidy": {
+    "name": "キャスディ",
+    "role": "ダメージ",
+    "subrole": "シャープシューター"
+  },
+  "hanzo": {
+    "name": "ハンゾー",
+    "role": "ダメージ",
+    "subrole": "シャープシューター"
+  },
+  "sojourn": {
+    "name": "ソジョーン",
+    "role": "ダメージ",
+    "subrole": "シャープシューター"
+  },
+  "widowmaker": {
+    "name": "ウィドウ",
+    "role": "ダメージ",
+    "subrole": "シャープシューター"
+  },
+  "dva": { "name": "D.Va", "role": "タンク", "subrole": "イニシエーター" },
+  "doomfist": {
+    "name": "ドゥームフィスト",
+    "role": "タンク",
+    "subrole": "イニシエーター"
+  },
+  "winston": {
+    "name": "ウィンストン",
+    "role": "タンク",
+    "subrole": "イニシエーター"
+  },
+  "wrecking_ball": {
+    "name": "レッキング・ボール",
+    "role": "タンク",
+    "subrole": "イニシエーター"
+  },
+  "mauga": { "name": "マウガ", "role": "タンク", "subrole": "ブルーザー" },
+  "orisa": { "name": "オリーサ", "role": "タンク", "subrole": "ブルーザー" },
+  "roadhog": {
+    "name": "ロードホッグ",
+    "role": "タンク",
+    "subrole": "ブルーザー"
+  },
+  "zarya": { "name": "ザリア", "role": "タンク", "subrole": "ブルーザー" },
+  "domina": { "name": "ドミナ", "role": "タンク", "subrole": "ストールワート" },
+  "hazard": {
+    "name": "ハザード",
+    "role": "タンク",
+    "subrole": "ストールワート"
+  },
+  "junker_queen": {
+    "name": "ジャンカークイーン",
+    "role": "タンク",
+    "subrole": "ストールワート"
+  },
+  "ramattra": {
+    "name": "ラマットラ",
+    "role": "タンク",
+    "subrole": "ストールワート"
+  },
+  "reinhardt": {
+    "name": "ラインハルト",
+    "role": "タンク",
+    "subrole": "ストールワート"
+  },
+  "sigma": { "name": "シグマ", "role": "タンク", "subrole": "ストールワート" },
+  "ana": { "name": "アナ", "role": "サポート", "subrole": "タクティシャン" },
+  "jetpack_cat": {
+    "name": "ジェットパック・キャット",
+    "role": "サポート",
+    "subrole": "タクティシャン"
+  },
+  "zenyatta": {
+    "name": "ゼニヤッタ",
+    "role": "サポート",
+    "subrole": "タクティシャン"
+  },
+  "baptiste": {
+    "name": "バティスト",
+    "role": "サポート",
+    "subrole": "タクティシャン"
+  },
+  "lucio": {
+    "name": "ルシオ",
+    "role": "サポート",
+    "subrole": "タクティシャン"
+  },
+  "illari": { "name": "イラリー", "role": "サポート", "subrole": "サバイバー" },
+  "wuyang": { "name": "ウーヤン", "role": "サポート", "subrole": "サバイバー" },
+  "juno": { "name": "ジュノ", "role": "サポート", "subrole": "サバイバー" },
+  "brigitte": {
+    "name": "ブリキッテ",
+    "role": "サポート",
+    "subrole": "サバイバー"
+  },
+  "mizuki": { "name": "ミズキ", "role": "サポート", "subrole": "サバイバー" },
+  "kiriko": { "name": "キリコ", "role": "サポート", "subrole": "メディック" },
+  "mercy": { "name": "マーシー", "role": "サポート", "subrole": "メディック" },
+  "moira": { "name": "モイラ", "role": "サポート", "subrole": "メディック" },
+  "lifeweaver": {
+    "name": "ライフウィーバー",
+    "role": "サポート",
+    "subrole": "メディック"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "bastion": { "name": "Bastion", "role": "damage", "subrole": "Specialist" },
+  "emre": { "name": "Emre", "role": "damage", "subrole": "Specialist" },
+  "junkrat": { "name": "Junkrat", "role": "damage", "subrole": "Specialist" },
+  "mei": { "name": "Mei", "role": "damage", "subrole": "Specialist" },
+  "soldier_76": {
+    "name": "Soldier: 76",
+    "role": "damage",
+    "subrole": "Specialist"
+  },
+  "symmetra": { "name": "Symmetra", "role": "damage", "subrole": "Specialist" },
+  "torbjorn": { "name": "Torbjörn", "role": "damage", "subrole": "Specialist" },
+  "anran": { "name": "Anran", "role": "damage", "subrole": "Flanker" },
+  "genji": { "name": "Genji", "role": "damage", "subrole": "Flanker" },
+  "reaper": { "name": "Reaper", "role": "damage", "subrole": "Flanker" },
+  "tracer": { "name": "Tracer", "role": "damage", "subrole": "Flanker" },
+  "vantage": { "name": "Vantage", "role": "damage", "subrole": "Flanker" },
+  "venture": { "name": "Venture", "role": "damage", "subrole": "Flanker" },
+  "echo": { "name": "Echo", "role": "damage", "subrole": "Recon" },
+  "freija": { "name": "Freija", "role": "damage", "subrole": "Recon" },
+  "pharah": { "name": "Pharah", "role": "damage", "subrole": "Recon" },
+  "sombra": { "name": "Sombra", "role": "damage", "subrole": "Recon" },
+  "ashe": { "name": "Ashe", "role": "damage", "subrole": "Sharpshooter" },
+  "cassidy": { "name": "Cassidy", "role": "damage", "subrole": "Sharpshooter" },
+  "hanzo": { "name": "Hanzo", "role": "damage", "subrole": "Sharpshooter" },
+  "sojourn": { "name": "Sojourn", "role": "damage", "subrole": "Sharpshooter" },
+  "widowmaker": {
+    "name": "Widowmaker",
+    "role": "damage",
+    "subrole": "Sharpshooter"
+  },
+  "dva": { "name": "D.Va", "role": "tank", "subrole": "Initiator" },
+  "doomfist": { "name": "Doomfist", "role": "tank", "subrole": "Initiator" },
+  "winston": { "name": "Winston", "role": "tank", "subrole": "Initiator" },
+  "wrecking_ball": {
+    "name": "Wrecking Ball",
+    "role": "tank",
+    "subrole": "Initiator"
+  },
+  "mauga": { "name": "Mauga", "role": "tank", "subrole": "Bruiser" },
+  "orisa": { "name": "Orisa", "role": "tank", "subrole": "Bruiser" },
+  "roadhog": { "name": "Roadhog", "role": "tank", "subrole": "Bruiser" },
+  "zarya": { "name": "Zarya", "role": "tank", "subrole": "Bruiser" },
+  "domina": { "name": "Domina", "role": "tank", "subrole": "Stalwart" },
+  "hazard": { "name": "Hazard", "role": "tank", "subrole": "Stalwart" },
+  "junker_queen": {
+    "name": "Junker Queen",
+    "role": "tank",
+    "subrole": "Stalwart"
+  },
+  "ramattra": { "name": "Ramattra", "role": "tank", "subrole": "Stalwart" },
+  "reinhardt": { "name": "Reinhardt", "role": "tank", "subrole": "Stalwart" },
+  "sigma": { "name": "Sigma", "role": "tank", "subrole": "Stalwart" },
+  "ana": { "name": "Ana", "role": "support", "subrole": "Tactician" },
+  "jetpack_cat": {
+    "name": "Jetpack Cat",
+    "role": "support",
+    "subrole": "Tactician"
+  },
+  "zenyatta": { "name": "Zenyatta", "role": "support", "subrole": "Tactician" },
+  "baptiste": { "name": "Baptiste", "role": "support", "subrole": "Tactician" },
+  "lucio": { "name": "Lucio", "role": "support", "subrole": "Tactician" },
+  "illari": { "name": "Illari", "role": "support", "subrole": "Survivor" },
+  "wuyang": { "name": "Wuyang", "role": "support", "subrole": "Survivor" },
+  "juno": { "name": "Juno", "role": "support", "subrole": "Survivor" },
+  "brigitte": { "name": "Brigitte", "role": "support", "subrole": "Survivor" },
+  "mizuki": { "name": "Mizuki", "role": "support", "subrole": "Survivor" },
+  "kiriko": { "name": "Kiriko", "role": "support", "subrole": "Medic" },
+  "mercy": { "name": "Mercy", "role": "support", "subrole": "Medic" },
+  "moira": { "name": "Moira", "role": "support", "subrole": "Medic" },
+  "lifeweaver": { "name": "Lifeweaver", "role": "support", "subrole": "Medic" }
+}
