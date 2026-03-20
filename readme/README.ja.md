@@ -58,6 +58,49 @@ pnpm dev
 | [デプロイ](../docs/deployment.md) | ビルド設定と各プラットフォームの手順 |
 | [開発ワークフロー](../docs/development-workflows.md) | ルート・ページ追加、Git 運用 |
 
+### コミットメッセージ
+
+[Conventional Commits](https://www.conventionalcommits.org/) 形式で、[commitlint](https://github.com/conventional-changelog/commitlint) により検証されます。**種類（type）** と **説明（subject）** をコロン＋スペースで区切ります。
+
+```text
+<type>: <subject>
+```
+
+**種類（`type`）** — 次のいずれかである必要があります（`@commitlint/config-conventional` の `type-enum` と一致）。
+
+| type | 使うとき |
+|------|----------|
+| `build` | ビルドツール・バンドラ設定など（Vite、`package.json` のビルド関連など） |
+| `chore` | メンテナンス・ツール・リポジトリ運用（ユーザー向け機能追加・バグ修正ではない） |
+| `ci` | CI ワークフロー、パイプライン、自動化の設定 |
+| `docs` | ドキュメントのみの変更 |
+| `feat` | 新機能・ユーザー向けの挙動の追加 |
+| `fix` | バグ修正 |
+| `perf` | パフォーマンス改善 |
+| `refactor` | バグ修正でも新機能でもない内部の整理 |
+| `revert` | 過去のコミットの取り消し |
+| `style` | フォーマット・空白・セミコロンなど（意味の変化なし） |
+| `test` | テストの追加・更新のみ |
+
+例:
+
+```text
+chore: 初期セットアップ
+feat: ヒーローピッカーページを追加
+fix: アンチピックデータの読み込みを修正
+```
+
+任意で **スコープ** を付けられます（ケバブケース。許可値: `components` / `deps` / `layout` / `routes` / `styles` / `utils` / `hooks`）。
+
+```text
+chore(deps): vite を 8.0.0 に更新
+feat(routes): about ページを追加
+```
+
+`初期セットアップ` のように **type なしの一行だけ** にすると、`type-empty` / `subject-empty` で弾かれます。
+
+`package.json` の `engines` では **Node.js ^24.11.x** を想定しています。古いメジャーだと pnpm が engine 警告を出すことがあります。
+
 その他、ルートには次のドキュメントがあります。
 
 - [AGENTS.md](../AGENTS.md) - AI エディタ向け開発ガイド

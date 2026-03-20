@@ -300,6 +300,49 @@ Routes are defined as files in `src/routes/`. TanStack Router automatically gene
 - **Commit-msg**: Validates commit message format (Conventional Commits)
 - **Pre-push**: Runs full check suite (biome, type-check, tests)
 
+#### Commit messages
+
+Commits are checked with [commitlint](https://github.com/conventional-changelog/commitlint) using [Conventional Commits](https://www.conventionalcommits.org/). Use a **type** and **subject** separated by a colon and a space:
+
+```text
+<type>: <subject>
+```
+
+**Types** (`type` must be one of these — enforced by `@commitlint/config-conventional`):
+
+| Type | When to use |
+|------|-------------|
+| `build` | Build tooling or bundler config (e.g. Vite, `package.json` scripts that affect the build) |
+| `chore` | Maintenance, tooling, repo housekeeping (no user-facing feature or fix) |
+| `ci` | CI workflows, pipelines, or automation config |
+| `docs` | Documentation only |
+| `feat` | New feature or user-visible behavior |
+| `fix` | Bug fix |
+| `perf` | Performance improvement |
+| `refactor` | Internal change that neither fixes a bug nor adds a feature |
+| `revert` | Reverts a previous commit |
+| `style` | Formatting, whitespace, semicolons — no change to meaning |
+| `test` | Tests only (add or update) |
+
+Examples:
+
+```text
+chore: initial project setup
+feat: add hero picker page
+fix: correct antipick data loading
+```
+
+Optional **scope** in parentheses (kebab-case, must be one of: `components`, `deps`, `layout`, `routes`, `styles`, `utils`, `hooks`):
+
+```text
+chore(deps): bump vite to 8.0.0
+feat(routes): add about page
+```
+
+A subject alone (for example `initial setup`) will fail with `type-empty` / `subject-empty` because the parser cannot extract a type.
+
+The project expects **Node.js ^24.11.x** (`package.json` `engines`). Using an older major may show a pnpm engine warning; align your runtime with the repo to avoid it.
+
 ## References
 
 - [Vite](https://vitejs.dev)
