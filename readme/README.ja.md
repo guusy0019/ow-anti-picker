@@ -99,6 +99,31 @@ feat(routes): about ページを追加
 
 `初期セットアップ` のように **type なしの一行だけ** にすると、`type-empty` / `subject-empty` で弾かれます。
 
+### GitHub Release（`release.yml`）
+
+[`.github/workflows/release.yml`](../.github/workflows/release.yml) は **必須ではありません**。`pnpm build`・テスト・GitHub Pages のデプロイには影響しません。
+
+| 内容 | 説明 |
+|------|------|
+| いつ動くか | `v*` 形式のタグが push されたとき（例: `v1.2.3`） |
+| 何をするか | [`changelogithub`](https://github.com/antfu/changelogithub) を実行し、コミット履歴から **GitHub の Release ノート**を自動生成する |
+| ローカルとの対応 | `package.json` の `pnpm release`（[`commit-and-tag-version`](https://github.com/absolute-version/commit-and-tag-version)）でバージョン・`CHANGELOG.md` の更新とタグ作成 → **タグを push** すると上記ワークフローが Release を整える |
+
+| 運用 | `release.yml` を |
+|------|-------------------|
+| `v1.2.3` のようなタグで GitHub Release を出したい | **残す**と便利 |
+| タグも Release も使わない（Pages だけなど） | **削除してよい**（ビルド・デプロイには不要） |
+
+**Node のバージョン**: ワークフロー内の `node-version` は `package.json` の `engines`（例: Node 24）に合わせるとよいです。
+
+**リリース手順の例**（この自動化を使う場合）:
+
+1. `main` などで `pnpm release` を実行し、プロンプトに従ってバージョンを上げ、タグまで作る（`commit-and-tag-version` の挙動に従う）。
+2. コミットとタグを push する: `git push origin main --follow-tags`（ブランチ名は環境に合わせて変更）。
+3. GitHub の **Actions** で **Release** ワークフローが成功したこと、**Releases** にノートが付いたことを確認する。
+
+`v*` タグを push しなければ、このワークフローは動きません。
+
 `package.json` の `engines` では **Node.js ^24.11.x** を想定しています。古いメジャーだと pnpm が engine 警告を出すことがあります。
 
 その他、ルートには次のドキュメントがあります。

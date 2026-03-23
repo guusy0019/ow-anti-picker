@@ -43,8 +43,7 @@ code {
   }
 
   .wrapper {
-    @apply mx-auto p-6 sm:p-8;
-    max-width: 48rem;
+    @apply mx-auto max-w-7xl p-6 sm:p-8;
   }
   * {
     @apply border-border outline-ring/50;

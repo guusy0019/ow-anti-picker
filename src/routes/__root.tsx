@@ -5,8 +5,9 @@ import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
 
 import { Layout } from '@/lib/layout';
 
-const title = 'Vite React Tailwind Starter';
-const description = 'app starter template';
+const title = 'OW アンチピック';
+const description =
+  '相手ヒーローを選んでアンチピック候補と理由を確認できる Overwatch 2 用ツール。';
 const url = 'https://vite-react-tailwind-starter.sznm.dev';
 const ogImgUrl =
   'https://og.sznm.dev/api/generate?heading=vite-react-tailwind-starter&text=React+vite+template+with+TailwindCSS+and+TypeScript+setup.&template=color';

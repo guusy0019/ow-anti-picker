@@ -8,7 +8,7 @@ alwaysApply: true
 - **スタック**: Vite 8、React 19、TanStack Router / TanStack Query、Tailwind CSS 4、pnpm。Next.js ではない（`next/image` 等は使わない。`public/` 配下の静的ファイルと `<img>` 等で統一）。
 - **編集の地図**: リポジトリ直下の `AGENTS.md` に、安全な変更範囲（ページ・ルート・ユーティリティ等）と手を付けないファイルがまとまっている。
 - **禁止**: `src/routeTree.gen.ts` の手編集（ルートは `src/routes/` に追加し、生成に任せる）。
-- **ユーティリティ**: `src/lib/utils/` に追加する関数はテスト（`*.test.ts`）を伴わせる（`AGENTS.md` の要件）。
+- **ユーティリティ**: `src/lib/utils/` に追加する関数は `tests/` 配下に対応する `*.test.ts` を伴わせる（`AGENTS.md` の要件）。
 - **アンチピック・ヒーローデータ**: `public/data/antipick/` と `public/data/heroes/` を触るときは Cursor スキル **antipick-data**（`.cursor/skills/antipick-data/SKILL.md`）を読んでから編集する。
 - **ヒーロー画像**: `public/assets/heroes/{id}.png`（URL は `/assets/heroes/{id}.png`）。JSON のヒーロー ID と basename を一致させる。
 - **コミット前の確認**: `pnpm check:turbo` を推奨（`ultracite:check` + `type:check` + `test`）。

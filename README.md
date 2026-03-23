@@ -343,6 +343,28 @@ A subject alone (for example `initial setup`) will fail with `type-empty` / `sub
 
 The project expects **Node.js ^24.11.x** (`package.json` `engines`). Using an older major may show a pnpm engine warning; align your runtime with the repo to avoid it.
 
+### GitHub Releases (`release.yml`)
+
+The workflow [`.github/workflows/release.yml`](.github/workflows/release.yml) is **optional**. It does not affect `pnpm build`, tests, or GitHub Pages deploys.
+
+| What it does | When a tag matching `v*` is pushed (e.g. `v1.2.3`), the workflow runs [`changelogithub`](https://github.com/antfu/changelogithub) and creates or updates a **GitHub Release** with generated notes. |
+| What pairs with it | The `release` script in `package.json` runs [`commit-and-tag-version`](https://github.com/absolute-version/commit-and-tag-version): bump version, update `CHANGELOG.md`, commit, and create a version tag. After you **push that tag**, this workflow can publish the Release on GitHub. |
+
+| Your workflow | Keep or remove `release.yml`? |
+|----------------|------------------------------|
+| You want semver tags (`v1.2.3`) and GitHub Release notes | **Keep** — useful automation |
+| You only need CI/Pages and never use tags or Releases | **Remove** — safe to delete |
+
+**Align Node in the workflow** with `package.json` `engines` (e.g. set `node-version: 24` in `release.yml` if the repo expects Node 24).
+
+**Typical release steps** (when using this automation):
+
+1. On `main` (or your release branch), run `pnpm release` and follow the prompts so `commit-and-tag-version` bumps the version and creates a tag.
+2. Push commits and tags: `git push origin main --follow-tags` (adjust branch name as needed).
+3. Confirm in GitHub **Actions** that **Release** ran for the new tag and check **Releases** for the generated notes.
+
+If you do not push `v*` tags, this workflow never runs.
+
 ## References
 
 - [Vite](https://vitejs.dev)

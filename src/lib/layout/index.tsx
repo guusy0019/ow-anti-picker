@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
 
 import { ThemeProvider } from '@/lib/components/theme-provider';
+import { LocaleProvider } from '@/lib/i18n/locale-provider';
 
-import { Footer } from './components/footer';
 import { Header } from './components/header';
 
 type LayoutProps = {
@@ -12,12 +12,12 @@ type LayoutProps = {
 export const Layout = ({ children }: LayoutProps) => {
   return (
     <ThemeProvider>
-      {/* <Meta /> */}
-      <div className="flex min-h-screen flex-col dark:bg-black dark:text-white">
-        <Header />
-        <main className="wrapper">{children}</main>
-        <Footer />
-      </div>
+      <LocaleProvider>
+        <div className="flex min-h-screen flex-col bg-background text-foreground">
+          <Header />
+          <main className="wrapper flex-1">{children}</main>
+        </div>
+      </LocaleProvider>
     </ThemeProvider>
   );
 };

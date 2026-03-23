@@ -32,7 +32,10 @@ const pwaOptions: Partial<VitePWAOptions> = {
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const isCheckDisabled = mode === 'production' || !!process.env.VITEST;
+  /** GitHub Pages のプロジェクトサイトでは CI で `/repo名/` を渡す */
+  const base = process.env.VITE_BASE_PATH ?? '/';
   return {
+    base,
     plugins: [
       ValidateEnv(),
       devtools(),

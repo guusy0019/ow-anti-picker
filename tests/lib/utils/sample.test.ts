@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 
-import { sum } from './sample';
+import { sum } from '@/lib/utils/sample';
 
 describe('sum', () => {
   test('positive number additions', () => {

@@ -14,6 +14,7 @@
     "ignoreUnknown": false,
     "includes": [
       "src/**/*",
+      "tests/**/*",
       "!src/*.gen.ts",
       "!turbo",
       "!src/lib/components/ui/**/*",

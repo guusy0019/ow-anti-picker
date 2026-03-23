@@ -2,25 +2,25 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "type:check": {
-      "inputs": ["tsconfig.json", "src/**"],
+      "inputs": ["tsconfig.json", "src/**", "tests/**"],
       "outputs": ["*.tsbuildinfo"],
       "env": ["VITE_API_BASE_URL"]
     },
     "ultracite:check": {
       "outputs": [],
-      "inputs": ["biome.json", "src/**"]
+      "inputs": ["biome.json", "src/**", "tests/**"]
     },
     "biome:ci": {
       "outputs": [],
-      "inputs": ["biome.json", "src/**"]
+      "inputs": ["biome.json", "src/**", "tests/**"]
     },
     "build": {
       "outputs": ["dist/**", "public/**"],
-      "env": ["VITE_API_BASE_URL"]
+      "env": ["VITE_API_BASE_URL", "VITE_BASE_PATH"]
     },
     "test": {
       "outputs": ["node_modules/.vite/vitest/**/results.json"],
-      "inputs": ["vitest.config.ts", "src/**"]
+      "inputs": ["vitest.config.ts", "src/**", "tests/**"]
     }
   }
 }

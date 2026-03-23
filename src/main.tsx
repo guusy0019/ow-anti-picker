@@ -11,10 +11,18 @@ import { QueryClientProvider } from '@tanstack/react-query';
 
 import Page404 from '@/lib/pages/404';
 import { queryClient } from '@/lib/services/constants';
+import { joinWithBaseUrl } from '@/lib/utils/public-url';
+
+const routerBasepath = joinWithBaseUrl(import.meta.env.BASE_URL, '').replace(
+  /\/$/,
+  ''
+);
+const basepath = routerBasepath === '' ? '/' : routerBasepath;
 
 // Create a new router instance
 const router = createRouter({
   routeTree,
+  basepath,
   context: {
     queryClient,
   },
