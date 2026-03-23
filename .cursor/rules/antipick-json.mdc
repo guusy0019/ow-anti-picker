@@ -1,0 +1,17 @@
+---
+description: アンチピック JSON（JA/EN）編集時の同期ルール
+globs:
+  - public/data/antipick/**/*
+---
+
+# アンチピック JSON
+
+詳細は **antipick-data** スキル（`.cursor/skills/antipick-data/SKILL.md`）に従う。要点のみ:
+
+- **`antipick-ja.json` をマスター**にし、続けて **`antipick-en.json` を同じ構造**にする（トップレベルキー、各配列の要素数・`id` の並び・`strength` は JA と同一。`reason` のみ EN を英語で）。
+- **`_meta`**: `version` / `updatedAt`（`YYYY-MM-DD`）は JA / EN で揃える。`locale` は `ja` / `en`。
+- 相手ヒーローが未整備のときは空配列 `[]`。JA と EN でキーセットと配列長を一致させる。
+- 検証: `python3 -m json.tool public/data/antipick/antipick-ja.json` および `antipick-en.json` が通ること。
+- スキーマの補足: `docs/dev/antipick-json-schema.md`。
+
+ヒーロー ID は **`public/assets/heroes/{id}.png`** の basename と一致させる（例: `soldier_76`）。

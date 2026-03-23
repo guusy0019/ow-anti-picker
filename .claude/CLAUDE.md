@@ -1,3 +1,25 @@
+# ow-anti-picker（Overwatch アンチピック）
+
+このリポジトリは **Vite + React 19 + TanStack Router / TanStack Query** の SPA である。**Next.js ではない**（`next/image` や App Router の前提は使わない。静的アセットは `public/` に置き、`<img src="/assets/...">` など既存パターンに合わせる）。
+
+## エージェントが最初に読むもの
+
+- **モジュール境界・編集可否・ルートの作法**: リポジトリ直下の [`AGENTS.md`](../AGENTS.md) を優先する。
+- **自動生成**: `src/routeTree.gen.ts` は**手編集禁止**（開発サーバ／プラグインで再生成される）。
+
+## ドメインデータ
+
+- **アンチピック JSON**（`public/data/antipick/antipick-ja.json` / `antipick-en.json`）: [`.claude/skills/antipick-data/SKILL.md`](./skills/antipick-data/SKILL.md) に従う。JA をマスターとし、EN はキー構造・`id`・`strength`・並びを JA と同一、`reason` のみ英語にする。
+- **ヒーロー表示名・ロール**: `public/data/heroes/hero-ja.json` / `hero-en.json`。アンチピックのヒーロー ID はここおよび画像ファイル名と整合させる。
+- **ヒーロー画像**: `public/assets/heroes/{id}.png`（ビルド後 URL は `/assets/heroes/{id}.png`）。JSON の `id` はこの basename と一致させる。
+
+## 検証コマンド
+
+- まとめて: `pnpm check:turbo`（Ultracite + `tsc` + `vitest`）
+- 個別: `pnpm ultracite:fix` / `pnpm type:check` / `pnpm test`
+
+---
+
 # Ultracite Code Standards
 
 This project uses **Ultracite**, a zero-config preset that enforces strict code quality standards through automated formatting and linting.
