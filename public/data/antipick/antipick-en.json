@@ -2,55 +2,450 @@
   "_meta": {
     "version": "1.0",
     "locale": "en",
-    "updatedAt": "2025-03-14"
+    "updatedAt": "2026-03-20"
   },
   "bastion": [
     {
-      "id": "genji",
+      "id": "sojourn",
       "strength": "strong",
-      "reason": "Deflect hard-counters Configuration mode, Genji has high burst damage, and shurikens are easy to land on a large Bastion"
+      "reason": "Huge hitbox makes charging rail energy easy; charged shots land reliably. Slide can break line of sight on Sentry mode, and his ultimate is easier to play around."
     },
     {
-      "id": "dva",
+      "id": "echo",
       "strength": "strong",
-      "reason": "Defense Matrix negates Configuration mode damage, and a large Bastion is easy to damage"
+      "reason": "Can pressure Bastion from above or the side even when he sits deep. Sticky Bombs connect easily; copying Bastion is very strong. Do not float in Flight during Sentry—you can die with no cover."
     }
   ],
   "emre": [],
-  "junkrat": [],
-  "mei": [],
-  "soldier_76": [],
-  "symmetra": [],
-  "torbjorn": [],
-  "anran": [],
-  "genji": [],
-  "reaper": [],
-  "tracer": [],
+  "junkrat": [
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "You can ignore both front poke and side combos and attack from the air one-sidedly. Skilled Junkrat may still anti-air you."
+    },
+    {
+      "id": "pharah",
+      "strength": "strong",
+      "reason": "Same idea as Echo—one-sided air damage. Skilled Junkrat may still anti-air you."
+    },
+    {
+      "id": "sombra",
+      "strength": "situational",
+      "reason": "Strong vs Junkrats who flank wide—Virus plus primary can secure kills. Weak vs Junkrats who only poke from the core with their team."
+    }
+  ],
+  "mei": [
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Ice Wall is irrelevant from the air. Icicles rarely stick, and headshot one-shot risk is low even if tagged."
+    },
+    {
+      "id": "pharah",
+      "strength": "strong",
+      "reason": "Same as Echo—Mei's strengths are largely nullified from the air."
+    }
+  ],
+  "soldier_76": [
+    {
+      "id": "genji",
+      "strength": "strong",
+      "reason": "If you close with cooldowns ready you heavily win the duel; as long as you do not panic-miss shurikens you usually come out ahead."
+    },
+    {
+      "id": "venture",
+      "strength": "strong",
+      "reason": "When Soldier is dominating he often plays wide, so many 1v1s happen—stable burst from there often secures the kill."
+    },
+    {
+      "id": "sombra",
+      "strength": "situational",
+      "reason": "Pick isolated Soldier from stealth. If Virus lands, commit; if not, Translocator out. Sticking to that plan works well."
+    }
+  ],
+  "symmetra": [
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "From the air you ignore her beam pressure and turrets."
+    },
+    {
+      "id": "pharah",
+      "strength": "strong",
+      "reason": "Same—Pharah bypasses Symmetra's main strengths."
+    },
+    {
+      "id": "cassidy",
+      "strength": "strong",
+      "reason": "Good vs Symmetra who beams on the ground—larger projectiles make headshots easier. Harder vs players who use Teleporter well."
+    }
+  ],
+  "torbjorn": [
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Break the turret from the air; its shots do not hit you while you poke. Often a one-sided kill."
+    },
+    {
+      "id": "pharah",
+      "strength": "strong",
+      "reason": "Same as Echo—delete the turret from above."
+    }
+  ],
+  "anran": [
+    {
+      "id": "tracer",
+      "strength": "strong",
+      "reason": ""
+    }
+  ],
+  "genji": [
+    {
+      "id": "sombra",
+      "strength": "strong",
+      "reason": "When Genji flanks, Hack plus Virus can kill before healing sticks. Engage Genji first, then others—reversing order risks getting dashed down."
+    }
+  ],
+  "reaper": [
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "One-sided air damage. Sticky Bomb his Teleport landing to force early Wraith so he cannot do his job."
+    },
+    {
+      "id": "cassidy",
+      "strength": "strong",
+      "reason": "Higher ranks Reaper roams for supports; Cassidy peeling with support can guarantee Grenade sticks and discourage dives. Large head and hopping movement make headshots easier."
+    }
+  ],
+  "tracer": [
+    {
+      "id": "torbjorn",
+      "strength": "strong",
+      "reason": "Season 12 Tracer nerfs plus Torbjorn's anti-Tracer armor make this matchup workable."
+    },
+    {
+      "id": "genji",
+      "strength": "situational",
+      "reason": "Advanced. Good Genji can one-shot Tracer with blade plus primary burst. Even a failed pick, Swift Strike lets him escape—Tracer is often unfavored. Treat as reference only."
+    }
+  ],
   "vantage": [],
-  "venture": [],
-  "echo": [],
+  "venture": [
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Venture's primary is short range so Echo barely takes return damage; after Bomb, burrow usually does not save. Echo's presence alone makes Venture passive. Watch tight rooms where Echo can collapse on you."
+    },
+    {
+      "id": "cassidy",
+      "strength": "strong",
+      "reason": "Grenade stick denies burrow and forces cooldowns so Venture dies reliably. Play with support so Venture cannot run you over."
+    }
+  ],
+  "echo": [
+    {
+      "id": "cassidy",
+      "strength": "strong",
+      "reason": "Poking Echo feeds large-projectile Cassidy; combo kills rarely stick due to HP. Bomb is heavily reduced by Combat Roll. No scope makes tracking easier. Cassidy is the default answer."
+    },
+    {
+      "id": "tracer",
+      "strength": "strong",
+      "reason": "Punish the end of Flight. If Echo plays passive, ignore and focus the front. Fighting her head-on you can die to primary damage—stay aware."
+    }
+  ],
   "freija": [],
-  "pharah": [],
-  "sombra": [],
-  "ashe": [],
-  "cassidy": [],
-  "hanzo": [],
-  "sojourn": [],
-  "widowmaker": [],
-  "dva": [],
-  "doomfist": [],
-  "winston": [],
-  "wrecking_ball": [],
-  "mauga": [],
-  "orisa": [],
-  "roadhog": [],
-  "zarya": [],
+  "pharah": [
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "The classic Pharah answer—close-range Sticky Bomb into beam chip is the baseline. Do not force the duel if she plays very high or only long-range poke."
+    }
+  ],
+  "sombra": [
+    {
+      "id": "cassidy",
+      "strength": "strong",
+      "reason": "Grenade keeps her out of melee; stable burst into Teleport. Easier to peel when she dives your support."
+    },
+    {
+      "id": "torbjorn",
+      "strength": "strong",
+      "reason": "Turret limits her pathing; she wastes time hacking or destroying it while it still deals damage."
+    },
+    {
+      "id": "kiriko",
+      "strength": "strong",
+      "reason": "Hard counter—meeting in stealth is hopeless. Hack and Virus get cleansed; EMP loses to Protection Suzu."
+    },
+    {
+      "id": "tracer",
+      "strength": "strong",
+      "reason": "You must burn Recall first or you cannot operate. Generally mirror Tracer and track her first."
+    },
+    {
+      "id": "vantage",
+      "strength": "strong",
+      "reason": "No real duel win condition; even a stealth opener you get shredded by gun damage."
+    },
+    {
+      "id": "ramattra",
+      "strength": "strong",
+      "reason": "Hardest tank—Teleporting back to team often dies to punch through Ravenous Vortex. Even when hacked he is too durable for much value."
+    }
+  ],
+  "ashe": [
+    {
+      "id": "widowmaker",
+      "strength": "strong",
+      "reason": "Ashe's strafe keeps the head line stable; at range Ashe cannot establish sightlines. Widow often forces an Ashe swap. Mid-to-close Ashe combos kill you—manage distance and back line."
+    }
+  ],
+  "cassidy": [
+    {
+      "id": "ashe",
+      "strength": "strong",
+      "reason": "With Season 12 Ashe, outside Grenade range you are favored at every band. Cassidy is usually answered by the whole comp; Ashe is the strongest individual pick."
+    }
+  ],
+  "hanzo": [
+    {
+      "id": "genji",
+      "strength": "strong",
+      "reason": "Up close Genji is favored; Hanzo cannot peel a Genji fighting elsewhere."
+    },
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Strong vs Hanzo, but at mid-close his large projectiles can body you. Fight mid-far or break LOS and burst in."
+    }
+  ],
+  "sojourn": [
+    {
+      "id": "genji",
+      "strength": "strong",
+      "reason": "Sojourn with no rail charge dies to Genji—only Disruptor Shot or Slide to escape."
+    },
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Same broad idea as Genji, but Echo can farm your energy while you focus others. Break LOS, then close with abilities."
+    }
+  ],
+  "widowmaker": [
+    {
+      "id": "sombra",
+      "strength": "strong",
+      "reason": "Stealth in with Virus plus headshot burst. If the rest of your roster loses teamfights, swap off Sombra and play frontline."
+    },
+    {
+      "id": "tracer",
+      "strength": "strong",
+      "reason": "Approach is harder than Sombra, but Tracer is far stronger into everyone except Widow."
+    },
+    {
+      "id": "genji",
+      "strength": "situational",
+      "reason": "Situational for high-ground maps or when they run double sniper."
+    }
+  ],
+  "dva": [
+    {
+      "id": "sojourn",
+      "strength": "strong",
+      "reason": "Matrix soaks shots while cutting angles; Power Slide is not Matrixable."
+    },
+    {
+      "id": "mei",
+      "strength": "strong",
+      "reason": "High HP survives Boosters plus Micro Missiles; primary spray pierces Matrix."
+    },
+    {
+      "id": "symmetra",
+      "strength": "situational",
+      "reason": "Beam pierces the mech, but at higher skill brackets the matchup is harder to rely on—mechanics matter."
+    }
+  ],
+  "doomfist": [
+    {
+      "id": "cassidy",
+      "strength": "strong",
+      "reason": "Play with support; Grenade as block ends. High HP resists one-shots—watch punch stopping Fortify timing."
+    },
+    {
+      "id": "sombra",
+      "strength": "strong",
+      "reason": "Hack during punch or slam block. Do not tunnel only Doom—play the whole map."
+    }
+  ],
+  "winston": [
+    {
+      "id": "reaper",
+      "strength": "strong",
+      "reason": "Breaking bubble saves the team. Hold high ground near support for ambushes; do not show early or jump angle gets read."
+    },
+    {
+      "id": "cassidy",
+      "strength": "strong",
+      "reason": "Move with support; Fan the Hammer breaks bubble; Deadeye answers Primal Rage."
+    }
+  ],
+  "wrecking_ball": [
+    {
+      "id": "sombra",
+      "strength": "strong",
+      "reason": "Hack the rollout to support; bait the engage rather than chasing blindly."
+    },
+    {
+      "id": "cassidy",
+      "strength": "strong",
+      "reason": "Grenade before Piledriver; you can also aim the landing. Roll through Minefield plus Pile combos."
+    }
+  ],
+  "mauga": [
+    {
+      "id": "sojourn",
+      "strength": "strong",
+      "reason": "Headshots spin the chainguns; Slide the charge."
+    },
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Self-sustain comp—damage Mauga for ult tempo; copying Mauga is very strong."
+    },
+    {
+      "id": "reaper",
+      "strength": "situational",
+      "reason": "Self-sustain; huge hitbox means high damage. Cage windows can enable Death Blossom."
+    }
+  ],
+  "orisa": [
+    {
+      "id": "sojourn",
+      "strength": "strong",
+      "reason": "Headshots farm rail energy; Slide the ultimate."
+    },
+    {
+      "id": "pharah",
+      "strength": "strong",
+      "reason": "Her kit is passive—slow chip from the sky works."
+    }
+  ],
+  "roadhog": [
+    {
+      "id": "sojourn",
+      "strength": "strong",
+      "reason": "Headshots spin rail; Slide while he walks forward in the open."
+    },
+    {
+      "id": "reaper",
+      "strength": "strong",
+      "reason": "No armor so shotguns shred; 300 HP often survives Chain Hook."
+    },
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Hook does not reach—stable damage from range."
+    }
+  ],
+  "zarya": [
+    {
+      "id": "pharah",
+      "strength": "strong",
+      "reason": "Range and mobility keep her primary from connecting; bubbles are awkward to peel with."
+    },
+    {
+      "id": "widowmaker",
+      "strength": "strong",
+      "reason": "Burst damage forces the whole team to respect angles."
+    },
+    {
+      "id": "mei",
+      "strength": "strong",
+      "reason": "Split after bubble use; easier headshots; wall counters Graviton Surge; favorable ult timing."
+    },
+    {
+      "id": "cassidy",
+      "strength": "situational",
+      "reason": "Self-sustain comps only—keep headshotting; Deadeye answers Graviton Surge."
+    }
+  ],
   "domina": [],
   "hazard": [],
-  "junker_queen": [],
-  "ramattra": [],
-  "reinhardt": [],
-  "sigma": [],
+  "junker_queen": [
+    {
+      "id": "mei",
+      "strength": "strong",
+      "reason": "Self-peel comp—split to bait shout; wall stops Rampage; freeze beats axe swing."
+    },
+    {
+      "id": "pharah",
+      "strength": "strong",
+      "reason": "Ignore Queen or bait shout—both are viable."
+    },
+    {
+      "id": "ashe",
+      "strength": "strong",
+      "reason": "Stacked Queen comps eat Dynamite."
+    },
+    {
+      "id": "junkrat",
+      "strength": "situational",
+      "reason": "Self-peel on indoor maps only—beginner-friendly option."
+    }
+  ],
+  "ramattra": [
+    {
+      "id": "pharah",
+      "strength": "strong",
+      "reason": "Air damage avoids eating Ram's kit—focus others or punish after Ravenous Vortex."
+    },
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Front and side pressure for ult tempo; Ramattra copy is strong."
+    }
+  ],
+  "reinhardt": [
+    {
+      "id": "pharah",
+      "strength": "strong",
+      "reason": "Fire Strike or ignore—Charge and Earthshatter are less scary."
+    },
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Same as Pharah—Charge and Shatter are less scary."
+    },
+    {
+      "id": "sojourn",
+      "strength": "strong",
+      "reason": "Large magazine keeps pressure up; Power Slide dodges Charge; Disruptor pierces barrier."
+    },
+    {
+      "id": "bastion",
+      "strength": "situational",
+      "reason": "Situational—sit on your tank and provide support fire."
+    }
+  ],
+  "sigma": [
+    {
+      "id": "mei",
+      "strength": "strong",
+      "reason": "Self-peel—split Sigma to burn abilities; primary spray pierces Kinetic Grasp."
+    },
+    {
+      "id": "echo",
+      "strength": "strong",
+      "reason": "Break barrier from the front, then look for Sticky Bombs under half HP; Sigma copy is strong. Do not overextend for copy past the barrier."
+    },
+    {
+      "id": "sombra",
+      "strength": "situational",
+      "reason": "Works in poke wars—a flank hack deletes barrier for a pick. At higher ranks flankers often deny this value."
+    }
+  ],
   "ana": [],
   "jetpack_cat": [],
   "zenyatta": [],
